@@ -14,6 +14,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class FederatedSchema {
 
+    /**
+     * I dont believe the following is needed when using Apollo Gateway with Managed Federation.
+     * When using Apollo Gateway with `serviceList` it was complaining with the following
+     *
+     * Error checking for changes to service definitions: Couldn't load service definitions for "shows" at http://localhost:8080/graphql:
+     * Validation error of type FieldUndefined: Field '_service' in type 'Query' is undefined @ '_service'
+     *
+     */
+
     @Bean
     public GraphQLSchema customSchema(SchemaParser schemaParser) {
         GraphQLSchema federatedSchema = Federation.transform(schemaParser.makeExecutableSchema())
