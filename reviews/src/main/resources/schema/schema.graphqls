@@ -1,0 +1,13 @@
+type Show @key(fields: "id") @extends {
+    id: ID @external
+    reviews: [Review]
+}
+
+type Review {
+    starRating: Int
+}
+
+type Query  {
+    "In order for the FederatedSchema.java to build the _entities query, you must reference the federatedType within a root node"
+    _workaround : Show @deprecated(reason: "This is a workaround")
+}
