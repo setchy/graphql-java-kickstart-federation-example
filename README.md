@@ -1,5 +1,4 @@
-A copy of [netflix/dgs-federation-example](https://github.com/Netflix/dgs-federation-example) but ported to GraphQL Spring Boot.
-
+A GraphQL Java Kickstart / GraphQL Spring Boot federation example, ported from [netflix/dgs-federation-example](https://github.com/Netflix/dgs-federation-example).
 
 The repository contains three separate projects:
 
