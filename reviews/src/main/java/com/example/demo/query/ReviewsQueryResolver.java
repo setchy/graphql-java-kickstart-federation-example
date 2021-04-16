@@ -15,6 +15,8 @@ public class ReviewsQueryResolver implements GraphQLQueryResolver {
     ReviewService reviewService;
 
     public Show get_workaround() {
-        throw new UnknownOperationException("Federation workaround");
+        throw new UnknownOperationException("Federation workaround - You need to reference types otherwise by default "
+            + "graphql-java-tools will remove them from the executable schema.  This in turn causes "
+            + "Federation.transform to not build out the _entities query");
     }
 }

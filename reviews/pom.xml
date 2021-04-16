@@ -39,9 +39,8 @@
             <version>${graphql-java-kickstart.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.graphql-java-kickstart</groupId>
-            <artifactId>graphql-spring-boot-starter-test</artifactId>
-            <version>${graphql-java-kickstart.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <!-- testing facilities -->
@@ -50,10 +49,6 @@
             <artifactId>graphql-spring-boot-starter-test</artifactId>
             <version>${graphql-java-kickstart.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 </project>
