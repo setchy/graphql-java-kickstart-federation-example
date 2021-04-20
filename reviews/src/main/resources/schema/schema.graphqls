@@ -1,3 +1,5 @@
+type Query
+
 type Show @key(fields: "id") @extends {
     id: ID @external
     reviews: [Review]
@@ -6,5 +8,3 @@ type Show @key(fields: "id") @extends {
 type Review {
     starRating: Int
 }
-
-type Query
