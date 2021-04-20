@@ -9,4 +9,5 @@ public class ReviewsApp {
     public static void main(String[] args) {
         SpringApplication.run(ReviewsApp.class, args);
     }
+
 }

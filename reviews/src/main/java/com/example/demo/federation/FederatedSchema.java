@@ -1,27 +1,24 @@
 package com.example.demo.federation;
 
-import com.apollographql.federation.graphqljava.Federation;
 import com.apollographql.federation.graphqljava._Entity;
 import com.example.demo.model.Show;
-import graphql.kickstart.tools.SchemaParser;
 import graphql.schema.GraphQLSchema;
+import com.apollographql.federation.graphqljava.SchemaTransformer;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 
-@Component
+@Configuration
 public class FederatedSchema {
 
     @Bean
-    public GraphQLSchema federatedGraphQLSchema(SchemaParser schemaParser)
+    public GraphQLSchema federatedGraphQLSchema(SchemaTransformer schemaTransformer)
         throws IOException {
-        GraphQLSchema federatedSchema = Federation.transform(schemaParser.makeExecutableSchema(), true)
+        return schemaTransformer
             .fetchEntities(env -> env.<List<Map<String, Object>>>getArgument(_Entity.argumentName)
                 .stream()
                 .map(reference -> {
@@ -39,8 +36,6 @@ public class FederatedSchema {
                 return null;
             })
             .build();
-
-        return federatedSchema;
     }
 }
 
