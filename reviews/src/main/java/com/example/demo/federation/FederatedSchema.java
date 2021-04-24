@@ -19,11 +19,14 @@ public class FederatedSchema {
     @Bean
     public GraphQLSchema federatedGraphQLSchema(SchemaTransformer schemaTransformer)
         throws IOException {
+
+        String federationTypeName = "Show";
+
         return schemaTransformer
             .fetchEntities(env -> env.<List<Map<String, Object>>>getArgument(_Entity.argumentName)
                 .stream()
                 .map(reference -> {
-                    if ("Show".equals(reference.get("__typename"))) {
+                    if (federationTypeName.equals(reference.get("__typename"))) {
                         return ShowReferenceResolver.resolveReference(reference);
                     }
                     return null;
@@ -32,7 +35,7 @@ public class FederatedSchema {
             .resolveEntityType(env -> {
                 final Object src = env.getObject();
                 if (src instanceof Show) {
-                    return env.getSchema().getObjectType("Show");
+                    return env.getSchema().getObjectType(federationTypeName);
                 }
                 return null;
             })
