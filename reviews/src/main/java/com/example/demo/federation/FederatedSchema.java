@@ -2,6 +2,7 @@ package com.example.demo.federation;
 
 import com.apollographql.federation.graphqljava._Entity;
 import com.example.demo.model.Show;
+import com.example.demo.resolvers.ShowReferenceResolver;
 import graphql.schema.GraphQLSchema;
 import com.apollographql.federation.graphqljava.SchemaTransformer;
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class FederatedSchema {
                 .stream()
                 .map(reference -> {
                     if ("Show".equals(reference.get("__typename"))) {
-                        return Show.resolveReference(reference);
+                        return ShowReferenceResolver.resolveReference(reference);
                     }
                     return null;
                 })
