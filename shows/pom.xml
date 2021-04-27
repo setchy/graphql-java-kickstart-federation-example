@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.apollographql.federation</groupId>
             <artifactId>federation-graphql-java-support</artifactId>
-            <version>0.6.3</version>
+            <version>0.6.4</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
