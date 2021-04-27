@@ -15,3 +15,12 @@
 #
 
 
+graphiql:
+    mapping: /graphiql
+    basePath: /
+    enabled: true
+    pageTitle: GraphiQL
+    cdn:
+        enabled: true
+        version: latest
+
