@@ -17,18 +17,16 @@
 package com.example.demo.services;
 
 import com.example.demo.model.Show;
+import java.util.Arrays;
+import java.util.List;
 import org.springframework.stereotype.Service;
-import java.util.*;
 
 @Service
 public class ShowsService {
+
     public List<Show> getShows() {
-        return Arrays.asList(
-            new Show("1","Stranger Things", 2016),
-            new Show("2","Ozark", 2017),
-            new Show("3","The Crown", 2016),
-            new Show("4","Dead to Me", 2019),
-            new Show("5","Orange is the New Black", 2013)
-        );
+        return Arrays.asList(new Show("1", "Stranger Things", 2016), new Show("2", "Ozark", 2017),
+            new Show("3", "The Crown", 2016), new Show("4", "Dead to Me", 2019),
+            new Show("5", "Orange is the New Black", 2013));
     }
 }

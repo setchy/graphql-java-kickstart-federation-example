@@ -5,6 +5,7 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 public class ShowReferenceResolver {
+
     public static Show resolveReference(@NotNull Map<String, Object> reference) {
         String federatedKeyName = "id";
 

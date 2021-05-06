@@ -32,7 +32,6 @@ public class ReviewService {
         reviews.add(new Review(4));
         reviews.add(new Review(3));
 
-
         return reviews;
     }
 }

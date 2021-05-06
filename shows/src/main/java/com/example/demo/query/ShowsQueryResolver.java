@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class ShowsQueryResolver implements GraphQLQueryResolver {
 
-  @Autowired
-  ShowsService showService;
+    @Autowired
+    ShowsService showService;
 
-  public List<Show> getShows() {
-    return showService.getShows();
-  }
+    public List<Show> getShows() {
+        return showService.getShows();
+    }
 }
