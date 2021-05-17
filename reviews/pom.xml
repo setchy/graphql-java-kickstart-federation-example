@@ -15,7 +15,7 @@
     <name>reviews</name>
 
     <properties>
-        <graphql-java-kickstart.version>11.0.0</graphql-java-kickstart.version>
+        <graphql-java-kickstart.version>11.1.0</graphql-java-kickstart.version>
     </properties>
 
     <dependencies>
