@@ -8,5 +8,11 @@ const gateway = new ApolloGateway({
     ]
 });
 
-const server = new ApolloServer({ gateway, subscriptions:false });
+const server = new ApolloServer({
+    gateway,
+ });
+
+
 server.listen();
+
+console.log(`🚀 Apollo Gateway now ready at http://localhost:4000/graphql`);
