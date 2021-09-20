@@ -15,7 +15,7 @@
     <name>shows</name>
 
     <properties>
-        <graphql-java-kickstart.version>11.1.0</graphql-java-kickstart.version>
+        <graphql-java-kickstart.version>12.0.0</graphql-java-kickstart.version>
     </properties>
 
     <dependencies>
