@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/gateway": "2.0.2",
-    "apollo-server": "3.6.7",
+    "apollo-server": "3.7.0",
     "graphql": "16.3.0"
   }
 }
