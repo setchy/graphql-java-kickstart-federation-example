@@ -15,6 +15,8 @@
     <properties>
         <graphql-java-kickstart.version>12.0.0</graphql-java-kickstart.version>
         <federation-graphql-java-support.version>2.0.0</federation-graphql-java-support.version>
+        <!-- FIXME: graphql-java explicit shouldn't be required -->
+        <graphql-java.version>17.3</graphql-java.version>
     </properties>
 
     <dependencies>
