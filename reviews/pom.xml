@@ -17,7 +17,7 @@
         <federation-graphql-java-support.version>2.0.3</federation-graphql-java-support.version>
         <!-- TEMP FIXME: downgrade graphql-java version that is from spring-boot-parent-starter -->
         <graphql-java.version>17.3</graphql-java.version>
-        <federation-graphql-java-support.version>2.0.1</federation-graphql-java-support.version>
+        <federation-graphql-java-support.version>2.0.3</federation-graphql-java-support.version>
     </properties>
 
     <dependencies>
