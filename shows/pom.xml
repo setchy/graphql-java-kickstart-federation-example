@@ -14,9 +14,10 @@
 
     <properties>
         <graphql-java-kickstart.version>12.0.0</graphql-java-kickstart.version>
-        <!-- TEMP FIXME: downgrade graphql-java version that is from spring-boot-parent-starter -->
+        <!-- TEMP FIXME: explicitly downgrade graphql-java version from spring-boot-parent-starter to version expected by graphql-java-kickstart:12.x  -->
         <graphql-java.version>17.3</graphql-java.version>
-        <federation-graphql-java-support.version>2.1.1</federation-graphql-java-support.version>
+        <!-- TEMP downgrade apollo federation library to latest graphql-java:17.x supported version -->
+        <federation-graphql-java-support.version>2.0.1</federation-graphql-java-support.version>
     </properties>
 
     <dependencies>
