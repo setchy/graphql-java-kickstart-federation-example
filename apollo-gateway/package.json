@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "2.4.1",
-    "@apollo/server": "4.6.0",
+    "@apollo/gateway": "2.4.2",
+    "@apollo/server": "4.7.1",
     "graphql": "16.6.0"
   }
 }
