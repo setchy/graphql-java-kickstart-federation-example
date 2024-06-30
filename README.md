@@ -1,3 +1,9 @@
+> [!WARNING]
+> This sample repository has been archived now that [GraphQL Java Kickstart : GraphQL Spring Boot](https://github.com/graphql-java-kickstart/graphql-spring-boot/blob/master/README.md) has also been archived.
+
+I recommend taking a look at either [Netflix DGS](https://netflix.github.io/dgs/) or [Spring GraphQL](https://docs.spring.io/spring-graphql/reference/index.html) documentation sites.
+
+
 A GraphQL Java Kickstart / GraphQL Spring Boot federation example, ported from [netflix/dgs-federation-example](https://github.com/Netflix/dgs-federation-example).
 
 The repository contains three separate projects:
