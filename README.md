@@ -1,5 +1,5 @@
 > [!WARNING]
-> This sample repository has been archived now that [GraphQL Java Kickstart : GraphQL Spring Boot](https://github.com/graphql-java-kickstart/graphql-spring-boot/blob/master/README.md) has also been archived.
+> This repository has been archived now that [GraphQL Java Kickstart : GraphQL Spring Boot](https://github.com/graphql-java-kickstart/graphql-spring-boot/blob/master/README.md) has also been archived.
 
 I recommend taking a look at either [Netflix DGS](https://netflix.github.io/dgs/) or [Spring GraphQL](https://docs.spring.io/spring-graphql/reference/index.html) documentation sites.
 
